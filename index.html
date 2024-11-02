@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task data Dashboard using package libraries</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
 </head>
 <body>
-    <head></head>
-    <main></main>
+    <head>
+        <h2>Dashboard задач</h2>
+    </head>
+    <main>
+        <div class="container">
+            <!-- Диаграмма для статусов задач -->
+            <div class="chart-container">
+                <canvas id="taskStatusChart"></canvas>
+            </div>       
+            <!-- Таблица задач -->
+            <table id="tasksTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Задача</th>
+                        <th>Статус</th>
+                        <th>Приоритет</th>
+                        <th>Срок выполнения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Данные таблицы будут динамически добавляться через JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
     <footer>by AsyaAir</footer>
-    <script src="./index.js"></script>
+
+<!-- Подключение библиотек -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment.min.js"></script>
+
+<script src="./index.js"></script>
 </body>
 </html>
